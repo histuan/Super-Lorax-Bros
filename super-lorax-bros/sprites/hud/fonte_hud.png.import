@@ -2,10 +2,13 @@
 
 importer="font_data_image"
 type="FontFile"
+uid="uid://dsklxcwixfspi"
+path="res://.godot/imported/fonte_hud.png-cc2cf9af288bb66ba98baab0b5cf80a6.fontdata"
 
 [deps]
 
 source_file="res://sprites/hud/fonte_hud.png"
+dest_files=["res://.godot/imported/fonte_hud.png-cc2cf9af288bb66ba98baab0b5cf80a6.fontdata"]
 
 [params]
 
