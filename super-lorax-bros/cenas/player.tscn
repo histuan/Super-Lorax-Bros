@@ -7,7 +7,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lorax"]
 size = Vector2(14, 34)
 
-[node name="player" type="CharacterBody2D" unique_id=2126500586]
+[node name="player" type="CharacterBody2D" unique_id=2126500586 groups=["jogador"]]
 collision_mask = 2
 script = ExtResource("1_kthid")
 

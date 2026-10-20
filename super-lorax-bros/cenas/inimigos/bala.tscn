@@ -1,0 +1,22 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/bala.gd" id="1_bala"]
+[ext_resource type="SpriteFrames" path="res://resources/sprite_frames/bala.tres" id="2_frames"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bala"]
+size = Vector2(8, 3)
+
+[node name="Bala" type="Area2D"]
+collision_layer = 0
+collision_mask = 19
+script = ExtResource("1_bala")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("2_frames")
+autoplay = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_bala")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+rect = Rect2(-5, -3, 10, 6)

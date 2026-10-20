@@ -1,0 +1,32 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/granada.gd" id="1_granada"]
+[ext_resource type="SpriteFrames" path="res://resources/sprite_frames/granada.tres" id="2_frames"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_corpo"]
+radius = 4.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_explosao"]
+radius = 24.0
+
+[node name="Granada" type="Area2D"]
+collision_layer = 0
+collision_mask = 19
+script = ExtResource("1_granada")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("2_frames")
+autoplay = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_corpo")
+
+[node name="AreaExplosao" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AreaExplosao"]
+shape = SubResource("CircleShape2D_explosao")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+rect = Rect2(-8, -8, 16, 16)
