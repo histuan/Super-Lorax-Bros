@@ -2,10 +2,4 @@
 
 __MADE USING GODOT__
 
-Group project of a Lorax-themed fangame with mario-style gameplay and mechanics.
-
-### Team:
-
-* Thiago Uchoa Gomes
-* Luís Fernando Borges de Melo Maia
-* Nicolle Luisa Maia Gurgel
+A Lorax-themed fangame with Mario-style gameplay and mechanics. The Lorax fights his way through a single World War II trench level.
