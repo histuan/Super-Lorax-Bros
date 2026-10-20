@@ -1,6 +1,6 @@
-[gd_resource type="SpriteFrames" load_steps=22 format=3]
+[gd_resource type="SpriteFrames" format=3 uid="uid://bitjcqmxcjfon"]
 
-[ext_resource type="Texture2D" path="res://sprites/cenario/animacoes/holofote.png" id="1_n1uox"]
+[ext_resource type="Texture2D" uid="uid://out7sqssubfo" path="res://sprites/cenario/animacoes/holofote.png" id="1_n1uox"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kb33n"]
 atlas = ExtResource("1_n1uox")
@@ -145,7 +145,7 @@ animations = [{
 "duration": 1.7,
 "texture": SubResource("AtlasTexture_acr76")
 }],
-"loop": true,
+"loop": 1,
 "name": &"default",
 "speed": 10.0
 }]

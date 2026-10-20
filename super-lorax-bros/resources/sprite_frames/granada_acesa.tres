@@ -1,6 +1,6 @@
-[gd_resource type="SpriteFrames" load_steps=4 format=3]
+[gd_resource type="SpriteFrames" format=3 uid="uid://bifourifwl758"]
 
-[ext_resource type="Texture2D" path="res://sprites/efeitos/granada_acesa.png" id="1_orgty"]
+[ext_resource type="Texture2D" uid="uid://bsdgskoslb4ef" path="res://sprites/efeitos/granada_acesa.png" id="1_orgty"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qdv1f"]
 atlas = ExtResource("1_orgty")
@@ -19,7 +19,7 @@ animations = [{
 "duration": 1.2,
 "texture": SubResource("AtlasTexture_r7bv6")
 }],
-"loop": true,
+"loop": 1,
 "name": &"default",
 "speed": 10.0
 }]

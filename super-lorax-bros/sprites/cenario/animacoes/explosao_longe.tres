@@ -1,6 +1,6 @@
-[gd_resource type="SpriteFrames" load_steps=9 format=3]
+[gd_resource type="SpriteFrames" format=3 uid="uid://dw8ec83b1efad"]
 
-[ext_resource type="Texture2D" path="res://sprites/cenario/animacoes/explosao_longe.png" id="1_xbx81"]
+[ext_resource type="Texture2D" uid="uid://c3i1blveirlrm" path="res://sprites/cenario/animacoes/explosao_longe.png" id="1_xbx81"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_106pa"]
 atlas = ExtResource("1_xbx81")
@@ -54,7 +54,7 @@ animations = [{
 "duration": 2.0,
 "texture": SubResource("AtlasTexture_ry8yy")
 }],
-"loop": false,
+"loop": 0,
 "name": &"default",
 "speed": 10.0
 }]

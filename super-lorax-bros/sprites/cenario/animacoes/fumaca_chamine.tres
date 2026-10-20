@@ -1,6 +1,6 @@
-[gd_resource type="SpriteFrames" load_steps=8 format=3]
+[gd_resource type="SpriteFrames" format=3 uid="uid://bfwiy2ukoe0l8"]
 
-[ext_resource type="Texture2D" path="res://sprites/cenario/animacoes/fumaca_chamine.png" id="1_x2mfk"]
+[ext_resource type="Texture2D" uid="uid://ks4e4tjnlrsu" path="res://sprites/cenario/animacoes/fumaca_chamine.png" id="1_x2mfk"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xpyo4"]
 atlas = ExtResource("1_x2mfk")
@@ -47,7 +47,7 @@ animations = [{
 "duration": 1.7,
 "texture": SubResource("AtlasTexture_1ixr2")
 }],
-"loop": true,
+"loop": 1,
 "name": &"default",
 "speed": 10.0
 }]
