@@ -4,7 +4,7 @@
 [ext_resource type="SpriteFrames" path="res://sprites/cenario/animacoes/lampiao.tres" id="2_bas42"]
 
 [node name="FundoMuro" type="Parallax2D"]
-scroll_scale = Vector2(0.75, 1)
+scroll_scale = Vector2(1, 1)
 repeat_size = Vector2(2880, 0)
 repeat_times = 3
 
