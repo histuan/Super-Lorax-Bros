@@ -2,14 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://d3jwm15et3t22" path="res://Assets Super Mario Bros/Assets Super Mario Bros/Sprites/Mario_Small_Idle.png" id="1_8or6t"]
 [ext_resource type="Script" uid="uid://dgdsmmdb3asvl" path="res://scripts/player.gd" id="1_kthid"]
-[ext_resource type="Texture2D" uid="uid://ct8uqpacoxaq1" path="res://Assets Super Mario Bros/Assets Super Mario Bros/Sprites/Mario_Big_Idle.png" id="2_i3yeh"]
 [ext_resource type="Shape2D" uid="uid://votsryffq4nh" path="res://resources/CollisionShapes/small_mario.tres" id="2_unwft"]
-[ext_resource type="Texture2D" uid="uid://c3njnoy5owfh3" path="res://Assets Super Mario Bros/Assets Super Mario Bros/Sprites/Mario_Big_Jump.png" id="3_gqqv0"]
-[ext_resource type="Texture2D" uid="uid://crqgheu7ndoxs" path="res://Assets Super Mario Bros/Assets Super Mario Bros/Sprites/Mario_Big_Pole.png" id="4_qwrs5"]
-[ext_resource type="Texture2D" uid="uid://dvnr77h30cjn6" path="res://Assets Super Mario Bros/Assets Super Mario Bros/Sprites/Mario_Big_Run1.png" id="5_rmatm"]
-[ext_resource type="Texture2D" uid="uid://biwgmc04ug3tt" path="res://Assets Super Mario Bros/Assets Super Mario Bros/Sprites/Mario_Big_Run2.png" id="6_4coxd"]
-[ext_resource type="Texture2D" uid="uid://cxxi757iq1gnv" path="res://Assets Super Mario Bros/Assets Super Mario Bros/Sprites/Mario_Big_Run3.png" id="7_yrlys"]
-[ext_resource type="Texture2D" uid="uid://k303fjvwyalc" path="res://Assets Super Mario Bros/Assets Super Mario Bros/Sprites/Mario_Big_Slide.png" id="8_0qyyh"]
 [ext_resource type="Texture2D" uid="uid://4axg8se7m40x" path="res://Assets Super Mario Bros/Assets Super Mario Bros/Sprites/Mario_Shooting_Idle.png" id="9_3kkam"]
 [ext_resource type="Texture2D" uid="uid://ugx1dv5u8m74" path="res://Assets Super Mario Bros/Assets Super Mario Bros/Sprites/Mario-Shooting.png" id="10_iqemb"]
 [ext_resource type="Texture2D" uid="uid://d3i8ain3y4vfj" path="res://Assets Super Mario Bros/Assets Super Mario Bros/Sprites/Mario_Shooting_Jump.png" id="11_of225"]
@@ -29,81 +22,6 @@
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_cdpwx"]
 animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("2_i3yeh")
-}],
-"loop": 1,
-"name": &"big_idle",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("3_gqqv0")
-}],
-"loop": 1,
-"name": &"big_jump",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("4_qwrs5")
-}],
-"loop": 1,
-"name": &"big_pole",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("5_rmatm")
-}, {
-"duration": 1.0,
-"texture": ExtResource("6_4coxd")
-}, {
-"duration": 1.0,
-"texture": ExtResource("7_yrlys")
-}],
-"loop": 1,
-"name": &"big_run",
-"speed": 10.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("8_0qyyh")
-}],
-"loop": 1,
-"name": &"big_slide",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("2_i3yeh")
-}, {
-"duration": 1.0,
-"texture": ExtResource("9_3kkam")
-}, {
-"duration": 1.0,
-"texture": ExtResource("2_i3yeh")
-}, {
-"duration": 1.0,
-"texture": ExtResource("9_3kkam")
-}, {
-"duration": 1.0,
-"texture": ExtResource("2_i3yeh")
-}, {
-"duration": 1.0,
-"texture": ExtResource("9_3kkam")
-}, {
-"duration": 1.0,
-"texture": ExtResource("2_i3yeh")
-}, {
-"duration": 1.0,
-"texture": ExtResource("9_3kkam")
-}],
-"loop": 1,
-"name": &"big_to_shooting",
-"speed": 5.0
-}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("10_iqemb")
@@ -210,35 +128,6 @@ animations = [{
 }],
 "loop": 1,
 "name": &"small_slide",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("1_8or6t")
-}, {
-"duration": 1.0,
-"texture": ExtResource("2_i3yeh")
-}, {
-"duration": 1.0,
-"texture": ExtResource("1_8or6t")
-}, {
-"duration": 1.0,
-"texture": ExtResource("2_i3yeh")
-}, {
-"duration": 1.0,
-"texture": ExtResource("1_8or6t")
-}, {
-"duration": 1.0,
-"texture": ExtResource("2_i3yeh")
-}, {
-"duration": 1.0,
-"texture": ExtResource("1_8or6t")
-}, {
-"duration": 1.0,
-"texture": ExtResource("2_i3yeh")
-}],
-"loop": 0,
-"name": &"small_to_big",
 "speed": 5.0
 }, {
 "frames": [{

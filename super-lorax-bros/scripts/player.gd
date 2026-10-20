@@ -4,7 +4,6 @@ class_name Player
 
 enum PlayerMode{
 	SMALL,
-	BIG,
 	SHOOTING
 }
 
