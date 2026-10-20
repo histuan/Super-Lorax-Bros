@@ -14,7 +14,7 @@ func trigger_animation(velocity: Vector2, direction: int, player_mode: Player.Pl
 		
 	else: 
 		if scale.x == 1 && sign(velocity.x) == -1:
-			scale.x == -1
+			scale.x = -1
 		elif scale.x == -1 && sign(velocity.x) == 1:
 			scale.x = 1
 		
