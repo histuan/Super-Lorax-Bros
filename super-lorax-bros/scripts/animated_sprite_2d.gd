@@ -6,7 +6,10 @@ func trigger_animation(velocity: Vector2, direction: int, player_mode: Player.Pl
 	var animation_prefix = Player.PlayerMode.keys()[player_mode].to_snake_case()
 
 	if not get_parent().is_on_floor():
-		play("%s_jump" % animation_prefix)
+		if velocity.y > 0:
+			play("%s_fall" % animation_prefix)
+		else:
+			play("%s_jump" % animation_prefix)
 	
 	elif sign(velocity.x) != sign(direction) && velocity.x != 0 && direction != 0:
 		play("%s_slide" % animation_prefix)
