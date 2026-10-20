@@ -1,10 +1,10 @@
-[gd_resource type="SpriteFrames" load_steps=31 format=3]
+[gd_resource type="SpriteFrames" format=3 uid="uid://ck77vkdh66fjg"]
 
-[ext_resource type="Texture2D" path="res://sprites/soldados/atirador/soldado_atirador_ajoelhar.png" id="1_1iufq"]
-[ext_resource type="Texture2D" path="res://sprites/soldados/atirador/soldado_atirador_atirar.png" id="2_5653m"]
-[ext_resource type="Texture2D" path="res://sprites/soldados/atirador/soldado_atirador_dead.png" id="3_0pwx0"]
-[ext_resource type="Texture2D" path="res://sprites/soldados/atirador/soldado_atirador_levantar.png" id="4_ktjo6"]
-[ext_resource type="Texture2D" path="res://sprites/soldados/atirador/soldado_atirador_walk.png" id="5_g5p5u"]
+[ext_resource type="Texture2D" uid="uid://dlce153m5q1nq" path="res://sprites/soldados/atirador/soldado_atirador_ajoelhar.png" id="1_1iufq"]
+[ext_resource type="Texture2D" uid="uid://dn4payevcgkv" path="res://sprites/soldados/atirador/soldado_atirador_atirar.png" id="2_5653m"]
+[ext_resource type="Texture2D" uid="uid://ckbktmo6picgf" path="res://sprites/soldados/atirador/soldado_atirador_dead.png" id="3_0pwx0"]
+[ext_resource type="Texture2D" uid="uid://8w8gwqkeywuu" path="res://sprites/soldados/atirador/soldado_atirador_levantar.png" id="4_ktjo6"]
+[ext_resource type="Texture2D" uid="uid://c83pd8ffkpve" path="res://sprites/soldados/atirador/soldado_atirador_walk.png" id="5_g5p5u"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_smqsf"]
 atlas = ExtResource("1_1iufq")
@@ -98,13 +98,9 @@ region = Rect2(216, 0, 72, 48)
 atlas = ExtResource("5_g5p5u")
 region = Rect2(288, 0, 72, 48)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_tydy1"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_run6a"]
 atlas = ExtResource("5_g5p5u")
 region = Rect2(360, 0, 72, 48)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_nn6r2"]
-atlas = ExtResource("5_g5p5u")
-region = Rect2(432, 0, 72, 48)
 
 [resource]
 animations = [{
@@ -124,7 +120,7 @@ animations = [{
 "duration": 1.6,
 "texture": SubResource("AtlasTexture_cpnnc")
 }],
-"loop": false,
+"loop": 0,
 "name": &"ajoelhar",
 "speed": 10.0
 }, {
@@ -141,7 +137,7 @@ animations = [{
 "duration": 2.2,
 "texture": SubResource("AtlasTexture_tjljq")
 }],
-"loop": true,
+"loop": 1,
 "name": &"atirar",
 "speed": 10.0
 }, {
@@ -161,7 +157,7 @@ animations = [{
 "duration": 8.0,
 "texture": SubResource("AtlasTexture_5w7px")
 }],
-"loop": false,
+"loop": 0,
 "name": &"dead",
 "speed": 10.0
 }, {
@@ -178,33 +174,30 @@ animations = [{
 "duration": 1.2,
 "texture": SubResource("AtlasTexture_t1l7a")
 }],
-"loop": false,
+"loop": 0,
 "name": &"levantar",
 "speed": 10.0
 }, {
 "frames": [{
-"duration": 1.0,
+"duration": 1.5,
 "texture": SubResource("AtlasTexture_wurvg")
 }, {
-"duration": 1.0,
+"duration": 1.5,
 "texture": SubResource("AtlasTexture_ihpsh")
 }, {
-"duration": 1.0,
+"duration": 1.5,
 "texture": SubResource("AtlasTexture_o70nx")
 }, {
-"duration": 1.0,
+"duration": 1.5,
 "texture": SubResource("AtlasTexture_et11p")
 }, {
-"duration": 1.0,
+"duration": 1.5,
 "texture": SubResource("AtlasTexture_lwftg")
 }, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_tydy1")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_nn6r2")
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_run6a")
 }],
-"loop": true,
+"loop": 1,
 "name": &"walk",
 "speed": 10.0
 }]

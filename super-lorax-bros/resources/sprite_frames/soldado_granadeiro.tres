@@ -1,8 +1,8 @@
-[gd_resource type="SpriteFrames" load_steps=17 format=3]
+[gd_resource type="SpriteFrames" format=3 uid="uid://b0h238ue06kwf"]
 
-[ext_resource type="Texture2D" path="res://sprites/soldados/granadeiro/soldado_granadeiro_arremessar.png" id="1_b3ho4"]
-[ext_resource type="Texture2D" path="res://sprites/soldados/granadeiro/soldado_granadeiro_dead.png" id="2_qq5yn"]
-[ext_resource type="Texture2D" path="res://sprites/soldados/granadeiro/soldado_granadeiro_idle.png" id="3_y88lx"]
+[ext_resource type="Texture2D" uid="uid://buh8txy14a4xq" path="res://sprites/soldados/granadeiro/soldado_granadeiro_arremessar.png" id="1_b3ho4"]
+[ext_resource type="Texture2D" uid="uid://cdhlmjxqe1vyf" path="res://sprites/soldados/granadeiro/soldado_granadeiro_dead.png" id="2_qq5yn"]
+[ext_resource type="Texture2D" uid="uid://0682noom0vqi" path="res://sprites/soldados/granadeiro/soldado_granadeiro_idle.png" id="3_y88lx"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_x7ha4"]
 atlas = ExtResource("1_b3ho4")
@@ -59,10 +59,10 @@ region = Rect2(216, 0, 72, 48)
 [resource]
 animations = [{
 "frames": [{
-"duration": 2.0,
+"duration": 4.5,
 "texture": SubResource("AtlasTexture_x7ha4")
 }, {
-"duration": 2.0,
+"duration": 4.5,
 "texture": SubResource("AtlasTexture_qier6")
 }, {
 "duration": 3.0,
@@ -71,7 +71,7 @@ animations = [{
 "duration": 2.5,
 "texture": SubResource("AtlasTexture_4h0ca")
 }],
-"loop": false,
+"loop": 0,
 "name": &"arremessar",
 "speed": 10.0
 }, {
@@ -91,7 +91,7 @@ animations = [{
 "duration": 8.0,
 "texture": SubResource("AtlasTexture_lqf4i")
 }],
-"loop": false,
+"loop": 0,
 "name": &"dead",
 "speed": 10.0
 }, {
@@ -108,7 +108,7 @@ animations = [{
 "duration": 1.5,
 "texture": SubResource("AtlasTexture_art7b")
 }],
-"loop": true,
+"loop": 1,
 "name": &"idle",
 "speed": 10.0
 }]
