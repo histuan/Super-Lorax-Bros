@@ -8,6 +8,8 @@ enum PlayerMode{
 }
 
 signal points_scored(points: int)
+signal died
+signal death_finished
 
 const POINTS_LABEL_SCENE = preload("res://cenas/points_label.tscn")
 
@@ -76,12 +78,14 @@ func on_enemy_stomped():
 	velocity.y = stomp_y_velocity
 	
 func die():
-	if player_mode == PlayerMode.SMALL:
-		is_dead = true
-		animated_sprite_2d.play("small_death")
-		set_physics_process(false)
-		
-		var death_tween = get_tree().create_tween()
-		death_tween.tween_property(self, "position", position + Vector2(0, -48), .5)
-		death_tween.chain().tween_property(self, "position", position + Vector2(0, 256), 1)
-		death_tween.tween_callback(func (): get_tree().reload_current_scene())
+	if is_dead:
+		return
+	is_dead = true
+	died.emit()
+	animated_sprite_2d.play("small_death")
+	set_physics_process(false)
+
+	var death_tween = get_tree().create_tween()
+	death_tween.tween_property(self, "position", position + Vector2(0, -48), .5)
+	death_tween.chain().tween_property(self, "position", position + Vector2(0, 256), 1)
+	death_tween.tween_callback(func (): death_finished.emit())

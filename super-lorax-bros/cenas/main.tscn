@@ -9,6 +9,8 @@
 [ext_resource type="TileSet" path="res://sprites/cenario/tilesets/objetos_trincheira.tres" id="12_obj"]
 [ext_resource type="SpriteFrames" path="res://resources/sprite_frames/bunker.tres" id="13_bunker"]
 [ext_resource type="Script" path="res://scripts/zona_morte.gd" id="14_zona"]
+[ext_resource type="Script" path="res://scripts/main.gd" id="15_main"]
+[ext_resource type="PackedScene" path="res://cenas/hud/hud.tscn" id="16_hud"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_meta"]
 size = Vector2(24, 32)
@@ -17,6 +19,7 @@ size = Vector2(24, 32)
 size = Vector2(1800, 40)
 
 [node name="main" type="Node" unique_id=1101589033]
+script = ExtResource("15_main")
 
 [node name="FundoCeu" parent="." instance=ExtResource("8_ceu")]
 scroll_offset = Vector2(0, -176)
@@ -55,6 +58,8 @@ script = ExtResource("14_zona")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ZonaMorte"]
 shape = SubResource("RectangleShape2D_zona")
+
+[node name="Hud" parent="." instance=ExtResource("16_hud")]
 
 [node name="player" parent="." unique_id=2126500586 instance=ExtResource("5_5wwvk")]
 position = Vector2(40, 30)
