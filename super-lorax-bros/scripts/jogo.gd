@@ -7,9 +7,11 @@ signal vidas_mudou(vidas: int)
 signal tempo_mudou(segundos: int)
 signal tempo_esgotado
 signal sem_vidas
+signal pontos_mudou(pontos: int)
 
 var vidas: int = VIDAS_INICIAIS
 var tempo_restante: float = TEMPO_LIMITE
+var pontos := 0
 var rodando := false
 
 
@@ -32,10 +34,18 @@ func _process(delta: float) -> void:
 		tempo_esgotado.emit()
 
 
-# Zera a partida: vidas cheias
+# Zera a partida: vidas cheias e pontos zerados
 func nova_partida() -> void:
 	vidas = VIDAS_INICIAIS
+	pontos = 0
 	vidas_mudou.emit(vidas)
+	pontos_mudou.emit(pontos)
+
+
+# Soma pontos à partida e avisa a HUD
+func adicionar_pontos(valor: int) -> void:
+	pontos += valor
+	pontos_mudou.emit(pontos)
 
 
 # Prepara uma tentativa: relógio cheio e rodando, sem mexer nas vidas

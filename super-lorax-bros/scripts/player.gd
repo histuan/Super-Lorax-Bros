@@ -33,19 +33,20 @@ const POINTS_LABEL_SCENE = preload("res://cenas/points_label.tscn")
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var player_mode = PlayerMode.SMALL
 var is_dead = false
+var venceu := false
 
 func _physics_process(delta):
-	
+
 	if not is_on_floor():
 		velocity.y += gravity * delta
-		
-	if Input.is_action_just_pressed("jump") and is_on_floor():
+
+	if Input.is_action_just_pressed("jump") and is_on_floor() and not venceu:
 		velocity.y = jump_velocity
 		
 	if Input.is_action_just_released("jump") and velocity.y < 0:
 		velocity.y *= 0.5
 		
-	var direction = Input.get_axis("left", "right")
+	var direction = 0.0 if venceu else Input.get_axis("left", "right")
 	if direction:
 		velocity.x = lerp(velocity.x, speed * direction, run_speed_damping * delta)
 	else:
@@ -69,16 +70,37 @@ func handle_enemy_collision(enemy: Enemy):
 		var angle_of_collision = rad_to_deg(global_position.angle_to_point(enemy.global_position))
 		
 		if angle_of_collision > min_stomp_degree && max_stomp_degree > angle_of_collision:
+			var estava_vivo := enemy.get_collision_layer_value(3)
 			enemy.die()
 			on_enemy_stomped()
+			if estava_vivo:
+				_pontuar_pisao(enemy)
 		else:
 			die()
 
 func on_enemy_stomped():
 	velocity.y = stomp_y_velocity
+
+# Dá 100 pontos pelo pisão e solta o rótulo "100" na posição do inimigo (nunca depois de morrer ou vencer)
+func _pontuar_pisao(enemy: Enemy) -> void:
+	if is_dead or venceu:
+		return
+	Jogo.adicionar_pontos(100)
+	var rotulo = POINTS_LABEL_SCENE.instantiate()
+	rotulo.text = "100"
+	rotulo.position = enemy.global_position + Vector2(-20, -20)
+	get_tree().root.add_child(rotulo)
 	
+# Chegou na porta: para de andar e de pular, ignora inimigos e segue sob gravidade
+func vencer():
+	if is_dead or venceu:
+		return
+	venceu = true
+	velocity.x = 0
+	area_2d.set_deferred("monitoring", false)
+
 func die():
-	if is_dead:
+	if is_dead or venceu:
 		return
 	is_dead = true
 	died.emit()

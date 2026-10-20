@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="super-lorax-bros"
-run/main_scene="uid://b4sceedwrcucm"
+run/main_scene="res://cenas/telas/titulo.tscn"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 

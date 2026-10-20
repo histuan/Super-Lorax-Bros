@@ -1,16 +1,19 @@
 [gd_scene format=4 uid="uid://b4sceedwrcucm"]
 
 [ext_resource type="PackedScene" uid="uid://cjcad33463ldt" path="res://cenas/player.tscn" id="5_5wwvk"]
-[ext_resource type="PackedScene" uid="uid://msngaj8oolwc" path="res://cenas/Goomba.tscn" id="7_v1d1r"]
 [ext_resource type="PackedScene" path="res://cenas/fundos/fundo_ceu.tscn" id="8_ceu"]
 [ext_resource type="PackedScene" path="res://cenas/fundos/fundo_campo.tscn" id="9_campo"]
 [ext_resource type="PackedScene" path="res://cenas/fundos/fundo_muro.tscn" id="10_muro"]
 [ext_resource type="TileSet" path="res://sprites/cenario/tilesets/tileset_trincheira_lama.tres" id="11_lama"]
 [ext_resource type="TileSet" path="res://sprites/cenario/tilesets/objetos_trincheira.tres" id="12_obj"]
 [ext_resource type="SpriteFrames" path="res://resources/sprite_frames/bunker.tres" id="13_bunker"]
-[ext_resource type="Script" path="res://scripts/zona_morte.gd" id="14_zona"]
-[ext_resource type="Script" path="res://scripts/main.gd" id="15_main"]
+[ext_resource type="Script" uid="uid://bfl4hy42yr5t0" path="res://scripts/zona_morte.gd" id="14_zona"]
+[ext_resource type="Script" uid="uid://fov8huhsicr7" path="res://scripts/main.gd" id="15_main"]
 [ext_resource type="PackedScene" path="res://cenas/hud/hud.tscn" id="16_hud"]
+[ext_resource type="Script" path="res://scripts/meta.gd" id="20_meta"]
+[ext_resource type="PackedScene" path="res://cenas/inimigos/soldado_baioneta.tscn" id="17_baioneta"]
+[ext_resource type="PackedScene" path="res://cenas/inimigos/soldado_atirador.tscn" id="18_atirador"]
+[ext_resource type="PackedScene" path="res://cenas/inimigos/soldado_granadeiro.tscn" id="19_granadeiro"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_meta"]
 size = Vector2(24, 32)
@@ -21,45 +24,44 @@ size = Vector2(1800, 40)
 [node name="main" type="Node" unique_id=1101589033]
 script = ExtResource("15_main")
 
-[node name="FundoCeu" parent="." instance=ExtResource("8_ceu")]
+[node name="FundoCeu" parent="." unique_id=1931691391 instance=ExtResource("8_ceu")]
 scroll_offset = Vector2(0, -176)
 
-[node name="FundoCampo" parent="." instance=ExtResource("9_campo")]
+[node name="FundoCampo" parent="." unique_id=1274642999 instance=ExtResource("9_campo")]
 scroll_offset = Vector2(0, -176)
 
-[node name="FundoMuro" parent="." instance=ExtResource("10_muro")]
+[node name="FundoMuro" parent="." unique_id=38520665 instance=ExtResource("10_muro")]
 scroll_offset = Vector2(0, -176)
 
-[node name="Chao" type="TileMapLayer" parent="."]
+[node name="Chao" type="TileMapLayer" parent="." unique_id=1225792708]
 tile_map_data = PackedByteArray("AAA5AAMAAAAAAAMAAAA4AAMAAAACAAMAAAA3AAMAAAADAAQAAAA2AAMAAAACAAEAAABkAAUAAAABAAIAAABkAAQAAAABAAMAAABkAAMAAAABAAEAAABkAAIAAAABAAEAAABkAAEAAAABAAEAAABkAAAAAAAAAAEAAAD//wUAAAADAAAAAAD//wQAAAADAAUAAAD//wMAAAABAAEAAAD//wIAAAABAAEAAAD//wEAAAABAAEAAAD//wAAAAAAAAEAAABjAAUAAAADAAIAAABjAAQAAAACAAMAAABiAAUAAAADAAIAAABiAAQAAAACAAMAAABhAAUAAAABAAUAAABhAAQAAAACAAMAAABgAAUAAAADAAIAAABgAAQAAAACAAMAAABfAAUAAAADAAIAAABfAAQAAAADAAQAAABeAAUAAAADAAIAAABeAAQAAAACAAMAAABdAAUAAAADAAIAAABdAAQAAAACAAMAAABcAAUAAAADAAIAAABcAAQAAAADAAQAAABbAAUAAAABAAUAAABbAAQAAAACAAMAAABaAAUAAAADAAIAAABaAAQAAAACAAMAAABZAAUAAAADAAIAAABZAAQAAAACAAMAAABYAAUAAAACAAUAAABYAAQAAAACAAMAAABXAAUAAAADAAIAAABXAAQAAAACAAMAAABWAAUAAAADAAIAAABWAAQAAAACAAMAAABVAAUAAAADAAIAAABVAAQAAAACAAMAAABUAAUAAAADAAIAAABUAAQAAAADAAQAAABTAAUAAAADAAIAAABTAAQAAAACAAMAAABSAAUAAAADAAIAAABSAAQAAAAAAAUAAABRAAUAAAADAAIAAABRAAQAAAAAAAUAAABQAAUAAAADAAIAAABQAAQAAAACAAMAAABPAAUAAAADAAIAAABPAAQAAAAAAAUAAABOAAUAAAACAAUAAABOAAQAAAACAAMAAABNAAUAAAACAAUAAABNAAQAAAACAAMAAABMAAUAAAADAAIAAABMAAQAAAADAAQAAABLAAUAAAADAAIAAABLAAQAAAAAAAUAAABKAAUAAAADAAIAAABKAAQAAAACAAMAAABJAAUAAAADAAIAAABJAAQAAAACAAMAAABIAAUAAAACAAUAAABIAAQAAAAAAAUAAABHAAUAAAADAAIAAABHAAQAAAACAAMAAABGAAUAAAADAAIAAABGAAQAAAADAAQAAABFAAUAAAADAAAAAABFAAQAAAACAAEAAABBAAUAAAABAAIAAABBAAQAAAAAAAMAAABAAAUAAAADAAIAAABAAAQAAAACAAMAAAA/AAUAAAADAAIAAAA/AAQAAAACAAMAAAA+AAUAAAADAAIAAAA+AAQAAAACAAMAAAA9AAUAAAADAAIAAAA9AAQAAAACAAMAAAA8AAUAAAADAAIAAAA8AAQAAAACAAMAAAA7AAUAAAABAAUAAAA7AAQAAAACAAMAAAA6AAUAAAADAAIAAAA6AAQAAAADAAQAAAA5AAUAAAADAAIAAAA5AAQAAAADAAMAAAA4AAUAAAADAAIAAAA4AAQAAAADAAMAAAA3AAUAAAADAAIAAAA3AAQAAAADAAMAAAA2AAUAAAADAAIAAAA2AAQAAAADAAMAAAA1AAUAAAADAAIAAAA1AAQAAAACAAMAAAA0AAUAAAADAAIAAAA0AAQAAAADAAQAAAAzAAUAAAABAAUAAAAzAAQAAAADAAQAAAAyAAUAAAADAAIAAAAyAAQAAAAAAAUAAAAxAAUAAAADAAIAAAAxAAQAAAACAAMAAAAwAAUAAAADAAIAAAAwAAQAAAAAAAUAAAAvAAUAAAABAAUAAAAvAAQAAAADAAQAAAAuAAUAAAADAAIAAAAuAAQAAAADAAQAAAAtAAUAAAADAAIAAAAtAAQAAAACAAMAAAAsAAUAAAACAAUAAAAsAAQAAAAAAAUAAAArAAUAAAADAAAAAAArAAQAAAACAAEAAAAnAAUAAAABAAIAAAAnAAQAAAAAAAMAAAAmAAUAAAADAAIAAAAmAAQAAAACAAMAAAAlAAUAAAABAAUAAAAlAAQAAAADAAQAAAAkAAUAAAABAAUAAAAkAAQAAAADAAQAAAAjAAUAAAACAAUAAAAjAAQAAAACAAMAAAAiAAUAAAABAAUAAAAiAAQAAAAAAAUAAAAhAAUAAAACAAUAAAAhAAQAAAADAAQAAAAgAAUAAAACAAUAAAAgAAQAAAACAAMAAAAfAAUAAAADAAIAAAAfAAQAAAACAAMAAAAeAAUAAAADAAIAAAAeAAQAAAACAAMAAAAdAAUAAAACAAUAAAAdAAQAAAACAAMAAAAcAAUAAAABAAUAAAAcAAQAAAACAAMAAAAbAAUAAAADAAIAAAAbAAQAAAACAAMAAAAaAAUAAAADAAIAAAAaAAQAAAACAAMAAAAZAAUAAAADAAIAAAAZAAQAAAAAAAUAAAAYAAUAAAADAAIAAAAYAAQAAAACAAMAAAAXAAUAAAADAAIAAAAXAAQAAAACAAMAAAAWAAUAAAADAAIAAAAWAAQAAAACAAMAAAAVAAUAAAADAAIAAAAVAAQAAAAAAAUAAAAUAAUAAAABAAUAAAAUAAQAAAACAAMAAAATAAUAAAADAAIAAAATAAQAAAAAAAUAAAASAAUAAAACAAUAAAASAAQAAAACAAMAAAARAAUAAAABAAUAAAARAAQAAAACAAMAAAAQAAUAAAADAAIAAAAQAAQAAAACAAMAAAAPAAUAAAADAAIAAAAPAAQAAAADAAQAAAAOAAUAAAACAAUAAAAOAAQAAAACAAMAAAANAAUAAAADAAIAAAANAAQAAAAAAAUAAAAMAAUAAAADAAIAAAAMAAQAAAAAAAUAAAALAAUAAAADAAIAAAALAAQAAAACAAMAAAAKAAUAAAABAAUAAAAKAAQAAAACAAMAAAAJAAUAAAABAAUAAAAJAAQAAAAAAAUAAAAIAAUAAAABAAUAAAAIAAQAAAADAAQAAAAHAAUAAAACAAUAAAAHAAQAAAADAAQAAAAGAAUAAAACAAUAAAAGAAQAAAADAAQAAAAFAAUAAAADAAIAAAAFAAQAAAACAAMAAAAEAAUAAAABAAUAAAAEAAQAAAACAAMAAAADAAUAAAADAAIAAAADAAQAAAADAAQAAAACAAUAAAACAAUAAAACAAQAAAACAAMAAAABAAUAAAADAAIAAAABAAQAAAAAAAUAAAAAAAUAAAACAAUAAAAAAAQAAAACAAMAAAA=")
 tile_set = ExtResource("11_lama")
 
-[node name="Objetos" type="TileMapLayer" parent="."]
+[node name="Objetos" type="TileMapLayer" parent="." unique_id=220248402]
 tile_map_data = PackedByteArray("AAAYAAIAAAAAAAIAAAAYAAMAAAAAAAMAAAAZAAIAAAABAAIAAAAZAAMAAAABAAMAAABBAAIAAAAAAAAAAABCAAIAAAABAAAAAABDAAIAAAABAAAAAABEAAIAAAABAAAAAABFAAIAAAACAAAAAABUAAMAAAABAAEAAABVAAIAAAABAAEAAABVAAMAAAAAAAEAAABWAAEAAAABAAEAAABWAAIAAAAAAAEAAABWAAMAAAABAAEAAAA=")
 tile_set = ExtResource("12_obj")
 
-[node name="Bunker" type="AnimatedSprite2D" parent="."]
+[node name="Bunker" type="AnimatedSprite2D" parent="." unique_id=1142255061]
 position = Vector2(1456, 0)
 sprite_frames = ExtResource("13_bunker")
 centered = false
 
-[node name="Meta" type="Area2D" parent="."]
+[node name="Meta" type="Area2D" parent="." unique_id=1516507765]
 position = Vector2(1504, 48)
-collision_mask = 1
+script = ExtResource("20_meta")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Meta"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Meta" unique_id=1789517854]
 shape = SubResource("RectangleShape2D_meta")
 
-[node name="ZonaMorte" type="Area2D" parent="."]
+[node name="ZonaMorte" type="Area2D" parent="." unique_id=914978162]
 position = Vector2(800, 140)
 collision_layer = 0
-collision_mask = 1
 script = ExtResource("14_zona")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ZonaMorte"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ZonaMorte" unique_id=1847133346]
 shape = SubResource("RectangleShape2D_zona")
 
-[node name="Hud" parent="." instance=ExtResource("16_hud")]
+[node name="Hud" parent="." unique_id=747308450 instance=ExtResource("16_hud")]
 
 [node name="player" parent="." unique_id=2126500586 instance=ExtResource("5_5wwvk")]
 position = Vector2(40, 30)
@@ -72,28 +74,26 @@ limit_bottom = 94
 
 [node name="enemies" type="Node" parent="." unique_id=461563813]
 
-[node name="Goomba" parent="enemies" unique_id=1003746970 instance=ExtResource("7_v1d1r")]
-position = Vector2(296, 25)
+[node name="Baioneta1" parent="enemies" unique_id=1101558577 instance=ExtResource("17_baioneta")]
+position = Vector2(280, 44)
 
-[node name="Goomba2" parent="enemies" unique_id=68868048 instance=ExtResource("7_v1d1r")]
-position = Vector2(488, 25)
+[node name="Baioneta2" parent="enemies" unique_id=205079862 instance=ExtResource("17_baioneta")]
+position = Vector2(520, 44)
 
-[node name="Goomba3" parent="enemies" unique_id=1870465400 instance=ExtResource("7_v1d1r")]
-position = Vector2(584, 25)
+[node name="Atirador1" parent="enemies" unique_id=592427868 instance=ExtResource("18_atirador")]
+position = Vector2(800, 44)
 
-[node name="Goomba4" parent="enemies" unique_id=1560118097 instance=ExtResource("7_v1d1r")]
-position = Vector2(744, 25)
+[node name="Granadeiro1" parent="enemies" unique_id=649952300 instance=ExtResource("19_granadeiro")]
+position = Vector2(1000, 44)
 
-[node name="Goomba5" parent="enemies" unique_id=1912828282 instance=ExtResource("7_v1d1r")]
-position = Vector2(840, 25)
+[node name="Baioneta3" parent="enemies" unique_id=1982769799 instance=ExtResource("17_baioneta")]
+position = Vector2(1160, 44)
 
-[node name="Goomba6" parent="enemies" unique_id=240535837 instance=ExtResource("7_v1d1r")]
-position = Vector2(968, 25)
+[node name="Atirador2" parent="enemies" unique_id=250716726 instance=ExtResource("18_atirador")]
+position = Vector2(1230, 44)
 
-[node name="Goomba7" parent="enemies" unique_id=98773812 instance=ExtResource("7_v1d1r")]
-position = Vector2(1224, 25)
+[node name="Granadeiro2" parent="enemies" unique_id=1217299165 instance=ExtResource("19_granadeiro")]
+position = Vector2(1320, 44)
 
-[node name="Goomba8" parent="enemies" unique_id=647318904 instance=ExtResource("7_v1d1r")]
-position = Vector2(1288, 25)
-
+[connection signal="body_entered" from="Meta" to="Meta" method="_on_body_entered"]
 [connection signal="body_entered" from="ZonaMorte" to="ZonaMorte" method="_on_body_entered"]
