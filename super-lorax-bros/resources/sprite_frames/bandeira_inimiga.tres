@@ -1,0 +1,32 @@
+[gd_resource type="SpriteFrames" load_steps=5 format=3]
+
+[ext_resource type="Texture2D" path="res://sprites/objetos/bandeira_inimiga.png" id="1_xhe06"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3ccfj"]
+atlas = ExtResource("1_xhe06")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2kmyh"]
+atlas = ExtResource("1_xhe06")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6qqk6"]
+atlas = ExtResource("1_xhe06")
+region = Rect2(32, 0, 16, 16)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.6,
+"texture": SubResource("AtlasTexture_3ccfj")
+}, {
+"duration": 1.6,
+"texture": SubResource("AtlasTexture_2kmyh")
+}, {
+"duration": 1.6,
+"texture": SubResource("AtlasTexture_6qqk6")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]

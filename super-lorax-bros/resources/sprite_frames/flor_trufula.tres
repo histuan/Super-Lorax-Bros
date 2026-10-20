@@ -1,0 +1,39 @@
+[gd_resource type="SpriteFrames" load_steps=6 format=3]
+
+[ext_resource type="Texture2D" path="res://sprites/itens/flor_trufula.png" id="1_ilqlr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ug2tc"]
+atlas = ExtResource("1_ilqlr")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cqjtw"]
+atlas = ExtResource("1_ilqlr")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_epyiu"]
+atlas = ExtResource("1_ilqlr")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ktak6"]
+atlas = ExtResource("1_ilqlr")
+region = Rect2(48, 0, 16, 16)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.8,
+"texture": SubResource("AtlasTexture_ug2tc")
+}, {
+"duration": 1.2,
+"texture": SubResource("AtlasTexture_cqjtw")
+}, {
+"duration": 1.8,
+"texture": SubResource("AtlasTexture_epyiu")
+}, {
+"duration": 1.2,
+"texture": SubResource("AtlasTexture_ktak6")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]

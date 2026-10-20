@@ -1,0 +1,22 @@
+[remap]
+
+importer="font_data_image"
+type="FontFile"
+
+[deps]
+
+source_file="res://sprites/hud/fonte_hud.png"
+
+[params]
+
+character_ranges=PackedStringArray("0x20-0x21", "0x25", "0x27-0x29", "0x2B-0x2F", "0x30-0x3A", "0x3F", "0x41-0x5A", "0xC1", "0xC0", "0xC2", "0xC3", "0xC9", "0xCA", "0xCD", "0xD3", "0xD4", "0xD5", "0xDA", "0xC7", "0xD7")
+kerning_pairs=PackedStringArray()
+columns=16
+rows=4
+image_margin=Rect2i(0, 0, 0, 0)
+character_margin=Rect2i(0, 0, 0, 0)
+ascent=0
+descent=0
+fallbacks=[]
+compress=true
+scaling_mode=2

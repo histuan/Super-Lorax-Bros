@@ -1,0 +1,46 @@
+[gd_resource type="SpriteFrames" load_steps=7 format=3]
+
+[ext_resource type="Texture2D" path="res://sprites/efeitos/lama_respingo.png" id="1_368kg"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wlpeg"]
+atlas = ExtResource("1_368kg")
+region = Rect2(0, 0, 32, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0gbj8"]
+atlas = ExtResource("1_368kg")
+region = Rect2(32, 0, 32, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2knf1"]
+atlas = ExtResource("1_368kg")
+region = Rect2(64, 0, 32, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bcjtp"]
+atlas = ExtResource("1_368kg")
+region = Rect2(96, 0, 32, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_smsk0"]
+atlas = ExtResource("1_368kg")
+region = Rect2(128, 0, 32, 16)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 0.5,
+"texture": SubResource("AtlasTexture_wlpeg")
+}, {
+"duration": 0.6,
+"texture": SubResource("AtlasTexture_0gbj8")
+}, {
+"duration": 0.7,
+"texture": SubResource("AtlasTexture_2knf1")
+}, {
+"duration": 0.8,
+"texture": SubResource("AtlasTexture_bcjtp")
+}, {
+"duration": 0.9,
+"texture": SubResource("AtlasTexture_smsk0")
+}],
+"loop": false,
+"name": &"default",
+"speed": 10.0
+}]

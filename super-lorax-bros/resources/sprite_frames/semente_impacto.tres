@@ -1,0 +1,39 @@
+[gd_resource type="SpriteFrames" load_steps=6 format=3]
+
+[ext_resource type="Texture2D" path="res://sprites/efeitos/semente_impacto.png" id="1_ric2w"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7rkpb"]
+atlas = ExtResource("1_ric2w")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6yca0"]
+atlas = ExtResource("1_ric2w")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4aygq"]
+atlas = ExtResource("1_ric2w")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3qy80"]
+atlas = ExtResource("1_ric2w")
+region = Rect2(48, 0, 16, 16)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 0.5,
+"texture": SubResource("AtlasTexture_7rkpb")
+}, {
+"duration": 0.6,
+"texture": SubResource("AtlasTexture_6yca0")
+}, {
+"duration": 0.7,
+"texture": SubResource("AtlasTexture_4aygq")
+}, {
+"duration": 0.9,
+"texture": SubResource("AtlasTexture_3qy80")
+}],
+"loop": false,
+"name": &"default",
+"speed": 10.0
+}]

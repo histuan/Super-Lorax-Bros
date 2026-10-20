@@ -1,0 +1,39 @@
+[gd_resource type="SpriteFrames" load_steps=6 format=3]
+
+[ext_resource type="Texture2D" path="res://sprites/efeitos/poeira_correr.png" id="1_pgemt"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_481tg"]
+atlas = ExtResource("1_pgemt")
+region = Rect2(0, 0, 16, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wadtu"]
+atlas = ExtResource("1_pgemt")
+region = Rect2(16, 0, 16, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i5x3f"]
+atlas = ExtResource("1_pgemt")
+region = Rect2(32, 0, 16, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lcdvl"]
+atlas = ExtResource("1_pgemt")
+region = Rect2(48, 0, 16, 8)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 0.6,
+"texture": SubResource("AtlasTexture_481tg")
+}, {
+"duration": 0.7,
+"texture": SubResource("AtlasTexture_wadtu")
+}, {
+"duration": 0.8,
+"texture": SubResource("AtlasTexture_i5x3f")
+}, {
+"duration": 0.9,
+"texture": SubResource("AtlasTexture_lcdvl")
+}],
+"loop": false,
+"name": &"default",
+"speed": 10.0
+}]

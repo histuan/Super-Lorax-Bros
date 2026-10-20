@@ -1,0 +1,53 @@
+[gd_resource type="SpriteFrames" load_steps=8 format=3]
+
+[ext_resource type="Texture2D" path="res://sprites/cenario/animacoes/fumaca_chamine.png" id="1_x2mfk"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xpyo4"]
+atlas = ExtResource("1_x2mfk")
+region = Rect2(0, 0, 30, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x2j5f"]
+atlas = ExtResource("1_x2mfk")
+region = Rect2(30, 0, 30, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xeia2"]
+atlas = ExtResource("1_x2mfk")
+region = Rect2(60, 0, 30, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aqj3m"]
+atlas = ExtResource("1_x2mfk")
+region = Rect2(90, 0, 30, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fhotl"]
+atlas = ExtResource("1_x2mfk")
+region = Rect2(120, 0, 30, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1ixr2"]
+atlas = ExtResource("1_x2mfk")
+region = Rect2(150, 0, 30, 64)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.7,
+"texture": SubResource("AtlasTexture_xpyo4")
+}, {
+"duration": 1.7,
+"texture": SubResource("AtlasTexture_x2j5f")
+}, {
+"duration": 1.7,
+"texture": SubResource("AtlasTexture_xeia2")
+}, {
+"duration": 1.7,
+"texture": SubResource("AtlasTexture_aqj3m")
+}, {
+"duration": 1.7,
+"texture": SubResource("AtlasTexture_fhotl")
+}, {
+"duration": 1.7,
+"texture": SubResource("AtlasTexture_1ixr2")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]

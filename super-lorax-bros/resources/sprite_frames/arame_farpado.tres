@@ -1,0 +1,25 @@
+[gd_resource type="SpriteFrames" load_steps=4 format=3]
+
+[ext_resource type="Texture2D" path="res://sprites/objetos/arame_farpado.png" id="1_vl5xd"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_deqnj"]
+atlas = ExtResource("1_vl5xd")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cjghh"]
+atlas = ExtResource("1_vl5xd")
+region = Rect2(16, 0, 16, 16)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_deqnj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cjghh")
+}],
+"loop": false,
+"name": &"default",
+"speed": 10.0
+}]

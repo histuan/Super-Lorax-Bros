@@ -1,0 +1,18 @@
+[gd_resource type="SpriteFrames" load_steps=3 format=3]
+
+[ext_resource type="Texture2D" path="res://sprites/objetos/bunker.png" id="1_bpvtk"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cvj3v"]
+atlas = ExtResource("1_bpvtk")
+region = Rect2(0, 0, 96, 64)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cvj3v")
+}],
+"loop": false,
+"name": &"default",
+"speed": 10.0
+}]

@@ -1,0 +1,39 @@
+[gd_resource type="SpriteFrames" load_steps=6 format=3]
+
+[ext_resource type="Texture2D" path="res://sprites/cenario/animacoes/lampiao.png" id="1_s73p8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vswmr"]
+atlas = ExtResource("1_s73p8")
+region = Rect2(0, 0, 52, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_64kuw"]
+atlas = ExtResource("1_s73p8")
+region = Rect2(52, 0, 52, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0vjw8"]
+atlas = ExtResource("1_s73p8")
+region = Rect2(104, 0, 52, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3s1xy"]
+atlas = ExtResource("1_s73p8")
+region = Rect2(156, 0, 52, 48)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.8,
+"texture": SubResource("AtlasTexture_vswmr")
+}, {
+"duration": 1.4,
+"texture": SubResource("AtlasTexture_64kuw")
+}, {
+"duration": 2.0,
+"texture": SubResource("AtlasTexture_0vjw8")
+}, {
+"duration": 1.6,
+"texture": SubResource("AtlasTexture_3s1xy")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]

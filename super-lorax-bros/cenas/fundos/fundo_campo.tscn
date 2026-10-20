@@ -1,0 +1,217 @@
+[gd_scene load_steps=11 format=3]
+
+[ext_resource type="SpriteFrames" path="res://sprites/cenario/animacoes/holofote.tres" id="1_8nwkt"]
+[ext_resource type="Texture2D" path="res://sprites/cenario/fundos/fundo_campo.png" id="2_pe56f"]
+[ext_resource type="SpriteFrames" path="res://sprites/cenario/animacoes/fumaca_chamine.tres" id="3_3g7hi"]
+[ext_resource type="SpriteFrames" path="res://sprites/cenario/animacoes/fogo.tres" id="4_k7ujd"]
+[ext_resource type="SpriteFrames" path="res://sprites/cenario/animacoes/fumaca_grande.tres" id="5_28vhs"]
+[ext_resource type="SpriteFrames" path="res://sprites/cenario/animacoes/disparo.tres" id="6_vfp7t"]
+[ext_resource type="Script" path="res://scripts/explosoes_fundo.gd" id="7_4y24t"]
+[ext_resource type="SpriteFrames" path="res://sprites/cenario/animacoes/explosao_longe.tres" id="8_bcmt6"]
+[ext_resource type="SpriteFrames" path="res://sprites/cenario/animacoes/explosao.tres" id="9_xvjsx"]
+[ext_resource type="SpriteFrames" path="res://sprites/cenario/animacoes/explosao_terra.tres" id="10_tddbn"]
+
+[node name="FundoCampo" type="Parallax2D"]
+scroll_scale = Vector2(0.4, 1)
+repeat_size = Vector2(2880, 0)
+repeat_times = 3
+
+[node name="holofote_1" type="AnimatedSprite2D" parent="."]
+position = Vector2(910, -10)
+sprite_frames = ExtResource("1_8nwkt")
+autoplay = "default"
+frame = 3
+speed_scale = 0.8
+centered = false
+
+[node name="holofote_2" type="AnimatedSprite2D" parent="."]
+position = Vector2(510, -3)
+sprite_frames = ExtResource("1_8nwkt")
+autoplay = "default"
+frame = 12
+speed_scale = 0.7
+centered = false
+
+[node name="holofote_3" type="AnimatedSprite2D" parent="."]
+position = Vector2(2230, -13)
+sprite_frames = ExtResource("1_8nwkt")
+autoplay = "default"
+frame = 5
+speed_scale = 0.65
+centered = false
+
+[node name="holofote_4" type="AnimatedSprite2D" parent="."]
+position = Vector2(2280, -13)
+sprite_frames = ExtResource("1_8nwkt")
+autoplay = "default"
+frame = 9
+speed_scale = 0.75
+centered = false
+
+[node name="Imagem" type="Sprite2D" parent="."]
+texture = ExtResource("2_pe56f")
+centered = false
+
+[node name="fumaca_chamine_1" type="AnimatedSprite2D" parent="."]
+position = Vector2(160, 38)
+sprite_frames = ExtResource("3_3g7hi")
+autoplay = "default"
+frame = 3
+speed_scale = 0.9
+centered = false
+
+[node name="fogo_1" type="AnimatedSprite2D" parent="."]
+position = Vector2(1184, 59)
+sprite_frames = ExtResource("4_k7ujd")
+autoplay = "default"
+frame = 3
+centered = false
+
+[node name="fumaca_grande_1" type="AnimatedSprite2D" parent="."]
+position = Vector2(1176, -44)
+sprite_frames = ExtResource("5_28vhs")
+autoplay = "default"
+frame = 3
+centered = false
+
+[node name="fogo_2" type="AnimatedSprite2D" parent="."]
+position = Vector2(1224, 66)
+sprite_frames = ExtResource("4_k7ujd")
+autoplay = "default"
+frame = 2
+speed_scale = 1.2
+centered = false
+
+[node name="fumaca_chamine_2" type="AnimatedSprite2D" parent="."]
+position = Vector2(2496, 15)
+sprite_frames = ExtResource("3_3g7hi")
+autoplay = "default"
+speed_scale = 0.8
+centered = false
+
+[node name="fumaca_grande_2" type="AnimatedSprite2D" parent="."]
+position = Vector2(2511, -28)
+sprite_frames = ExtResource("5_28vhs")
+autoplay = "default"
+speed_scale = 0.85
+centered = false
+
+[node name="fogo_3" type="AnimatedSprite2D" parent="."]
+position = Vector2(2525, 93)
+sprite_frames = ExtResource("4_k7ujd")
+autoplay = "default"
+frame = 1
+centered = false
+
+[node name="fumaca_chamine_3" type="AnimatedSprite2D" parent="."]
+position = Vector2(390, 51)
+sprite_frames = ExtResource("3_3g7hi")
+autoplay = "default"
+frame = 3
+speed_scale = 0.85
+centered = false
+
+[node name="fumaca_chamine_4" type="AnimatedSprite2D" parent="."]
+position = Vector2(1730, 51)
+sprite_frames = ExtResource("3_3g7hi")
+autoplay = "default"
+centered = false
+
+[node name="fumaca_chamine_5" type="AnimatedSprite2D" parent="."]
+position = Vector2(2660, 53)
+sprite_frames = ExtResource("3_3g7hi")
+autoplay = "default"
+frame = 3
+speed_scale = 1.15
+centered = false
+
+[node name="fogo_4" type="AnimatedSprite2D" parent="."]
+position = Vector2(1045, 116)
+sprite_frames = ExtResource("4_k7ujd")
+autoplay = "default"
+centered = false
+
+[node name="fogo_5" type="AnimatedSprite2D" parent="."]
+position = Vector2(1037, 102)
+sprite_frames = ExtResource("4_k7ujd")
+autoplay = "default"
+frame = 3
+speed_scale = 1.15
+centered = false
+
+[node name="fogo_6" type="AnimatedSprite2D" parent="."]
+position = Vector2(1053, 102)
+sprite_frames = ExtResource("4_k7ujd")
+autoplay = "default"
+frame = 2
+speed_scale = 0.9
+centered = false
+
+[node name="fumaca_grande_3" type="AnimatedSprite2D" parent="."]
+position = Vector2(1038, -3)
+sprite_frames = ExtResource("5_28vhs")
+autoplay = "default"
+frame = 3
+speed_scale = 0.95
+centered = false
+
+[node name="disparo_1" type="AnimatedSprite2D" parent="."]
+position = Vector2(2205, 111)
+sprite_frames = ExtResource("6_vfp7t")
+autoplay = "default"
+speed_scale = 0.87
+centered = false
+
+[node name="disparo_2" type="AnimatedSprite2D" parent="."]
+position = Vector2(2265, 113)
+sprite_frames = ExtResource("6_vfp7t")
+autoplay = "default"
+speed_scale = 0.65
+centered = false
+
+[node name="disparo_3" type="AnimatedSprite2D" parent="."]
+position = Vector2(363, 115)
+sprite_frames = ExtResource("6_vfp7t")
+autoplay = "default"
+speed_scale = 0.98
+centered = false
+
+[node name="fogo_7" type="AnimatedSprite2D" parent="."]
+position = Vector2(752, 130)
+sprite_frames = ExtResource("4_k7ujd")
+autoplay = "default"
+frame = 1
+centered = false
+
+[node name="fumaca_grande_4" type="AnimatedSprite2D" parent="."]
+position = Vector2(743, 24)
+sprite_frames = ExtResource("5_28vhs")
+autoplay = "default"
+speed_scale = 1.1
+centered = false
+
+[node name="disparo_4" type="AnimatedSprite2D" parent="."]
+position = Vector2(1569, 118)
+sprite_frames = ExtResource("6_vfp7t")
+autoplay = "default"
+speed_scale = 0.71
+centered = false
+flip_h = true
+
+[node name="fumaca_chamine_6" type="AnimatedSprite2D" parent="."]
+position = Vector2(2421, 76)
+sprite_frames = ExtResource("3_3g7hi")
+autoplay = "default"
+centered = false
+
+[node name="ExplosoesLonge" type="Node2D" parent="."]
+script = ExtResource("7_4y24t")
+tipos = Array[SpriteFrames]([ExtResource("8_bcmt6")])
+faixa_y = Vector2(112, 126)
+intervalo = Vector2(0.9, 2.6)
+
+[node name="ExplosoesPerto" type="Node2D" parent="."]
+script = ExtResource("7_4y24t")
+tipos = Array[SpriteFrames]([ExtResource("9_xvjsx"), ExtResource("10_tddbn")])
+faixa_y = Vector2(148, 158)
+intervalo = Vector2(1.4, 3.6)

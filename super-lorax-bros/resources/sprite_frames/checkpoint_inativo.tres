@@ -1,0 +1,18 @@
+[gd_resource type="SpriteFrames" load_steps=3 format=3]
+
+[ext_resource type="Texture2D" path="res://sprites/objetos/checkpoint_inativo.png" id="1_4k315"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p0fan"]
+atlas = ExtResource("1_4k315")
+region = Rect2(0, 0, 16, 32)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p0fan")
+}],
+"loop": false,
+"name": &"default",
+"speed": 10.0
+}]

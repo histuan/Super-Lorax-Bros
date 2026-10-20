@@ -1,0 +1,39 @@
+[gd_resource type="SpriteFrames" load_steps=6 format=3]
+
+[ext_resource type="Texture2D" path="res://sprites/lorax/semente_projetil.png" id="1_6xpst"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jvjt8"]
+atlas = ExtResource("1_6xpst")
+region = Rect2(0, 0, 12, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t2ogg"]
+atlas = ExtResource("1_6xpst")
+region = Rect2(12, 0, 12, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_10573"]
+atlas = ExtResource("1_6xpst")
+region = Rect2(24, 0, 12, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5aemr"]
+atlas = ExtResource("1_6xpst")
+region = Rect2(36, 0, 12, 12)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 0.8,
+"texture": SubResource("AtlasTexture_jvjt8")
+}, {
+"duration": 0.8,
+"texture": SubResource("AtlasTexture_t2ogg")
+}, {
+"duration": 0.8,
+"texture": SubResource("AtlasTexture_10573")
+}, {
+"duration": 0.8,
+"texture": SubResource("AtlasTexture_5aemr")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]

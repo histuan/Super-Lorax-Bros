@@ -1,0 +1,81 @@
+[gd_resource type="SpriteFrames" load_steps=12 format=3]
+
+[ext_resource type="Texture2D" path="res://sprites/cenario/animacoes/explosao.png" id="1_3h7hu"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oosku"]
+atlas = ExtResource("1_3h7hu")
+region = Rect2(0, 0, 56, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7yid4"]
+atlas = ExtResource("1_3h7hu")
+region = Rect2(56, 0, 56, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dvcn1"]
+atlas = ExtResource("1_3h7hu")
+region = Rect2(112, 0, 56, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p8bgb"]
+atlas = ExtResource("1_3h7hu")
+region = Rect2(168, 0, 56, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l6yfu"]
+atlas = ExtResource("1_3h7hu")
+region = Rect2(224, 0, 56, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lx768"]
+atlas = ExtResource("1_3h7hu")
+region = Rect2(280, 0, 56, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bsfqe"]
+atlas = ExtResource("1_3h7hu")
+region = Rect2(336, 0, 56, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fb61w"]
+atlas = ExtResource("1_3h7hu")
+region = Rect2(392, 0, 56, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lppe1"]
+atlas = ExtResource("1_3h7hu")
+region = Rect2(448, 0, 56, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ay4tu"]
+atlas = ExtResource("1_3h7hu")
+region = Rect2(504, 0, 56, 56)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 0.5,
+"texture": SubResource("AtlasTexture_oosku")
+}, {
+"duration": 0.6,
+"texture": SubResource("AtlasTexture_7yid4")
+}, {
+"duration": 0.7,
+"texture": SubResource("AtlasTexture_dvcn1")
+}, {
+"duration": 0.8,
+"texture": SubResource("AtlasTexture_p8bgb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l6yfu")
+}, {
+"duration": 1.2,
+"texture": SubResource("AtlasTexture_lx768")
+}, {
+"duration": 1.4,
+"texture": SubResource("AtlasTexture_bsfqe")
+}, {
+"duration": 1.6,
+"texture": SubResource("AtlasTexture_fb61w")
+}, {
+"duration": 1.8,
+"texture": SubResource("AtlasTexture_lppe1")
+}, {
+"duration": 2.0,
+"texture": SubResource("AtlasTexture_ay4tu")
+}],
+"loop": false,
+"name": &"default",
+"speed": 10.0
+}]

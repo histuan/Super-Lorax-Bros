@@ -1,0 +1,32 @@
+[gd_resource type="SpriteFrames" load_steps=5 format=3]
+
+[ext_resource type="Texture2D" path="res://sprites/objetos/bandeira_lorax.png" id="1_grw72"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fr8ek"]
+atlas = ExtResource("1_grw72")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7rq2q"]
+atlas = ExtResource("1_grw72")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rgfai"]
+atlas = ExtResource("1_grw72")
+region = Rect2(32, 0, 16, 16)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.6,
+"texture": SubResource("AtlasTexture_fr8ek")
+}, {
+"duration": 1.6,
+"texture": SubResource("AtlasTexture_7rq2q")
+}, {
+"duration": 1.6,
+"texture": SubResource("AtlasTexture_rgfai")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]

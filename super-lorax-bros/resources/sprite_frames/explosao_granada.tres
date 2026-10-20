@@ -1,0 +1,81 @@
+[gd_resource type="SpriteFrames" load_steps=12 format=3]
+
+[ext_resource type="Texture2D" path="res://sprites/efeitos/explosao_granada.png" id="1_v8psk"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ljkqd"]
+atlas = ExtResource("1_v8psk")
+region = Rect2(0, 0, 56, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n2cx0"]
+atlas = ExtResource("1_v8psk")
+region = Rect2(56, 0, 56, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tb3p8"]
+atlas = ExtResource("1_v8psk")
+region = Rect2(112, 0, 56, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ogxk7"]
+atlas = ExtResource("1_v8psk")
+region = Rect2(168, 0, 56, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l5oyd"]
+atlas = ExtResource("1_v8psk")
+region = Rect2(224, 0, 56, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m5kn2"]
+atlas = ExtResource("1_v8psk")
+region = Rect2(280, 0, 56, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dqgwe"]
+atlas = ExtResource("1_v8psk")
+region = Rect2(336, 0, 56, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_00dta"]
+atlas = ExtResource("1_v8psk")
+region = Rect2(392, 0, 56, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vcmov"]
+atlas = ExtResource("1_v8psk")
+region = Rect2(448, 0, 56, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6pj5g"]
+atlas = ExtResource("1_v8psk")
+region = Rect2(504, 0, 56, 56)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 0.5,
+"texture": SubResource("AtlasTexture_ljkqd")
+}, {
+"duration": 0.6,
+"texture": SubResource("AtlasTexture_n2cx0")
+}, {
+"duration": 0.7,
+"texture": SubResource("AtlasTexture_tb3p8")
+}, {
+"duration": 0.8,
+"texture": SubResource("AtlasTexture_ogxk7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l5oyd")
+}, {
+"duration": 1.2,
+"texture": SubResource("AtlasTexture_m5kn2")
+}, {
+"duration": 1.4,
+"texture": SubResource("AtlasTexture_dqgwe")
+}, {
+"duration": 1.6,
+"texture": SubResource("AtlasTexture_00dta")
+}, {
+"duration": 1.8,
+"texture": SubResource("AtlasTexture_vcmov")
+}, {
+"duration": 2.0,
+"texture": SubResource("AtlasTexture_6pj5g")
+}],
+"loop": false,
+"name": &"default",
+"speed": 10.0
+}]

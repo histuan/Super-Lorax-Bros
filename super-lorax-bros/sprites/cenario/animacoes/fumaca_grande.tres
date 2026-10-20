@@ -1,0 +1,53 @@
+[gd_resource type="SpriteFrames" load_steps=8 format=3]
+
+[ext_resource type="Texture2D" path="res://sprites/cenario/animacoes/fumaca_grande.png" id="1_j7wge"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d6bq2"]
+atlas = ExtResource("1_j7wge")
+region = Rect2(0, 0, 56, 120)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ibdwj"]
+atlas = ExtResource("1_j7wge")
+region = Rect2(56, 0, 56, 120)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ciclt"]
+atlas = ExtResource("1_j7wge")
+region = Rect2(112, 0, 56, 120)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lvgxm"]
+atlas = ExtResource("1_j7wge")
+region = Rect2(168, 0, 56, 120)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1esn7"]
+atlas = ExtResource("1_j7wge")
+region = Rect2(224, 0, 56, 120)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lgahc"]
+atlas = ExtResource("1_j7wge")
+region = Rect2(280, 0, 56, 120)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.6,
+"texture": SubResource("AtlasTexture_d6bq2")
+}, {
+"duration": 1.6,
+"texture": SubResource("AtlasTexture_ibdwj")
+}, {
+"duration": 1.6,
+"texture": SubResource("AtlasTexture_ciclt")
+}, {
+"duration": 1.6,
+"texture": SubResource("AtlasTexture_lvgxm")
+}, {
+"duration": 1.6,
+"texture": SubResource("AtlasTexture_1esn7")
+}, {
+"duration": 1.6,
+"texture": SubResource("AtlasTexture_lgahc")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]

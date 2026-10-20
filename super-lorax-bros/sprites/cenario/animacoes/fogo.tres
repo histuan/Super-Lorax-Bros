@@ -1,0 +1,39 @@
+[gd_resource type="SpriteFrames" load_steps=6 format=3]
+
+[ext_resource type="Texture2D" path="res://sprites/cenario/animacoes/fogo.png" id="1_1m8qw"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_esfe8"]
+atlas = ExtResource("1_1m8qw")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e65es"]
+atlas = ExtResource("1_1m8qw")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ga21v"]
+atlas = ExtResource("1_1m8qw")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5ssq1"]
+atlas = ExtResource("1_1m8qw")
+region = Rect2(48, 0, 16, 16)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.1,
+"texture": SubResource("AtlasTexture_esfe8")
+}, {
+"duration": 1.2,
+"texture": SubResource("AtlasTexture_e65es")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ga21v")
+}, {
+"duration": 1.3,
+"texture": SubResource("AtlasTexture_5ssq1")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]

@@ -1,0 +1,39 @@
+[gd_resource type="SpriteFrames" load_steps=6 format=3]
+
+[ext_resource type="Texture2D" path="res://sprites/itens/semente_dourada.png" id="1_irton"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ikmq"]
+atlas = ExtResource("1_irton")
+region = Rect2(0, 0, 12, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6xigf"]
+atlas = ExtResource("1_irton")
+region = Rect2(12, 0, 12, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e0oam"]
+atlas = ExtResource("1_irton")
+region = Rect2(24, 0, 12, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xy16n"]
+atlas = ExtResource("1_irton")
+region = Rect2(36, 0, 12, 12)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.1,
+"texture": SubResource("AtlasTexture_2ikmq")
+}, {
+"duration": 0.9,
+"texture": SubResource("AtlasTexture_6xigf")
+}, {
+"duration": 0.9,
+"texture": SubResource("AtlasTexture_e0oam")
+}, {
+"duration": 0.9,
+"texture": SubResource("AtlasTexture_xy16n")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]

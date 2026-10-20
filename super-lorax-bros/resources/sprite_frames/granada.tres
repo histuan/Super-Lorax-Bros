@@ -1,0 +1,39 @@
+[gd_resource type="SpriteFrames" load_steps=6 format=3]
+
+[ext_resource type="Texture2D" path="res://sprites/soldados/granada.png" id="1_0lxxs"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e7mth"]
+atlas = ExtResource("1_0lxxs")
+region = Rect2(0, 0, 12, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yw2en"]
+atlas = ExtResource("1_0lxxs")
+region = Rect2(12, 0, 12, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8x7vk"]
+atlas = ExtResource("1_0lxxs")
+region = Rect2(24, 0, 12, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lp3ow"]
+atlas = ExtResource("1_0lxxs")
+region = Rect2(36, 0, 12, 12)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 0.8,
+"texture": SubResource("AtlasTexture_e7mth")
+}, {
+"duration": 0.8,
+"texture": SubResource("AtlasTexture_yw2en")
+}, {
+"duration": 0.8,
+"texture": SubResource("AtlasTexture_8x7vk")
+}, {
+"duration": 0.8,
+"texture": SubResource("AtlasTexture_lp3ow")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
